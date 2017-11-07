@@ -182,6 +182,7 @@ body {
 
 .footer {
     background-color: grey;
+    position: absolute;
     left: 0;
     bottom: 0;
 }
