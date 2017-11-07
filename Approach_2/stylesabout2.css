@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.containernav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-nav {
+    background: white;
+} 
+
+.mainnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainnav-nav-primary,
+.mainnav-nav-secondary  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainnav-item {
+    float: left;
+}
+
+.mainnav-item a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 0.8rem;
+    color: #646464;
+    transition: all .20s linear;
+}
+
+.mainnav-item a:hover {
+    color: black;
+    background: #f2f2f2;
+}
