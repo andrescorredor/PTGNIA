@@ -20,6 +20,10 @@ header:after {
 	clear: both;
 }
 
+nav {
+	position: fixed;
+}
+
 nav ul {
 	list-style: none;
 	margin: 0;

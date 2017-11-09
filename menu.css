@@ -54,11 +54,11 @@ body {
     z-index: 2;
 }
 
-.heading::after {
+/* .heading::after {
     content: '';
     display: table;
     clear: both;
-}
+} */
 
 .mainNav-toggle {
     background: none;
