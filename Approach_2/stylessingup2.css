@@ -1,9 +1,21 @@
+body, html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
 .header-nav {
     background-color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 
 .containernav {
@@ -40,4 +52,119 @@ body {
 .mainnav-item a:hover {
     color: black;
     background-color: #f2f2f2;;
+}
+
+/* Content */
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.logoicon {
+    display: block;
+    margin: 145px auto auto auto;
+}
+
+.container-form {
+    width: 30%;
+    margin: 3rem auto;
+}
+
+.input-login-half,
+.input-login-full {
+    font-family: roboto, sans-serif;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    height: 28px;
+    margin: 1.5rem auto;
+    letter-spacing: 1px;
+}
+
+.input-login-half {
+    width: 47%;
+}
+
+.input-login-half:nth-child(2) {
+    margin-left: 3%;
+}
+
+.input-login-full {
+    width: 100%;
+}
+
+*::-webkit-input-placeholder {
+    color: #c1c1c1;
+ }  
+
+ .input-login-half:active,
+ .input-login-half:focus,
+.input-login-full:active,
+.input-login-full:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.container-button-form {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.button-form {
+    background-color: #42aade;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 50px;
+}
+
+.button-form:hover {
+    background-color: #237daa;
+}
+
+.button-form:active,
+.button-form:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.button-form a {
+    text-decoration: none;
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+
+
+.footernav {
+    background-color: #333333;
+    width: 100%;
+}
+
+.containerfooter {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footernav-nav-primary,
+.footernav-nav-secondary {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 1rem 10px;
+    font-family: Roboto, sans-serif;
+}
+
+.footernav-nav-secondary {
+    padding-left: 4rem;
+}
+
+.footernav-item a {
+    text-decoration: none;
+    color: #646464;
+    line-height: 1.8;
+    font-size: 0.8rem;
 }

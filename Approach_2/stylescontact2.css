@@ -1,9 +1,20 @@
+body, html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
 .header-nav {
     background-color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .containernav {
@@ -39,4 +50,139 @@ body {
 .mainnav-item a:hover {
     color: black;
     background-color: #f2f2f2;
+}
+
+/* BODY GENERAL */
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.heading-body {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #646464;
+}
+
+.text-body {
+    line-height: 1.6;
+    width: 70%;
+    margin: auto;
+    color: #646464;
+}
+
+
+/* BODY-TEXT */
+
+.container-message-body {
+    width: 70%;
+    margin: 10rem auto 0 auto;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+/* MAIN-CONTACT FORM */
+
+.container-form {
+    width: 50%;
+    margin: 6rem auto;
+}
+
+.input-form {
+    border: none;
+    border-bottom: solid 1px #c1c1c1;
+    width: 100%;
+    height: 28px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 1px;
+}
+
+.input-form:active,
+.input-form:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+*::-webkit-input-placeholder {
+    color: #c1c1c1;
+} 
+
+.text-form  {
+    font-family: Roboto, sans-serif;
+    color: #646464;
+    margin-top: 2rem;
+}
+.textarea-form {
+    width: 100%;
+    border: solid 1px #c1c1c1;
+    border-radius: 10px;
+}
+
+.textarea-form:active,
+.textarea-form:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.container-button-contact {
+    text-align: center;
+    margin: 3rem auto 6rem auto;
+}
+
+.button-contact {
+    border-radius: 50px;
+    border: none;
+    background-color: #42aade;
+    color: white;
+    padding: 10px 50px;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+}
+
+.button-contact:hover {
+    background-color: #237daa;
+}
+
+.button-contact:active,
+.button-contact:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* FOOTER */
+
+.footernav {
+    background: #333333;
+}
+
+.container-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footernav-nav-primary,
+.footernav-nav-secondary {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 1rem 10px;
+    font-family: Roboto, sans-serif;
+}
+
+.footernav-nav-secondary {
+    padding-left: 4rem;
+}
+
+.footernav-item a {
+    text-decoration: none;
+    color: #646464;
+    line-height: 1.8;
+    font-size: 0.8rem;
+}
+
+.footernav-item a:hover {
+    color: #f2f2f2;
 }

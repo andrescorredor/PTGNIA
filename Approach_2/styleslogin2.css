@@ -1,11 +1,21 @@
 body,
 html {
     height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
 .header-nav {
     background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 
 .containernav {
@@ -47,9 +57,13 @@ html {
 
 /* MAIN-LOGIN FORM */
 
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
 .loginicon {
     display: block;
-    margin: 7rem auto auto auto;
+    margin: 145px auto auto auto;
 }
 
 .containerform {
@@ -68,6 +82,12 @@ html {
     letter-spacing: 1px;
 }
 
+.input-login:active,
+.input-login:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 *::-webkit-input-placeholder {
     color: #c1c1c1;
  }   
@@ -75,7 +95,7 @@ html {
 .container-button-form {
     text-align: center;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 
 .button-form {
@@ -86,9 +106,14 @@ html {
 }
 
 .button-form:hover {
-    background-color: 
+    background-color: #237daa;
 }
 
+.button-form:active,
+.button-form:focus {
+    outline: none;
+    box-shadow: none;
+}
 .button-form a {
     text-decoration: none;
     color: white;
@@ -102,9 +127,8 @@ html {
 .footernav {
     background-color: #333333;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-
+    /* position: absolute; */
+    /* bottom: 0; */
 }
 
 .containerfooter {
