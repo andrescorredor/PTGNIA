@@ -9,8 +9,8 @@ body {
 }
 
 .header-nav {
-    background-color: white;
-}
+    background: white;
+} 
 
 .containernav {
     width: 90%;
@@ -23,7 +23,7 @@ body {
 }
 
 .mainnav-nav-primary,
-.mainnav-nav-secondary {
+.mainnav-nav-secondary  {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -40,12 +40,12 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 0.8rem;
     color: #646464;
-    transition: all .15s linear;
+    transition: all .20s linear;
 }
 
 .mainnav-item a:hover {
     color: black;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 
 /* BODY GENERAL */
@@ -80,8 +80,8 @@ body {
 
 .footernav-item a {
     text-decoration: none;
-    line-height: 1.8;
     color: #646464;
+    line-height: 1.8;
     font-size: 0.8rem;
 }
 
